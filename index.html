@@ -7,8 +7,24 @@
     <title>2D Portfolio GAME</title>
   </head>
   <body>
+    <style>
+      #app {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+    </style>
     <div id="app">
       <p>Tab/Click around to move</p>
+
+      <div id="textbox-contaiter" style="display:none">
+        <div id="textbox">
+          <p id="dialogue" class="ui-text"></p>
+          <div class="btn-container"> 
+            <button id="close">Close</button>
+          </div>
+        </div>
+      </div>
       <canvas id="game"></canvas>
     </div>
     <script type="module" src="src/main.js"></script>
